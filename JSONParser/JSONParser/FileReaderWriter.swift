@@ -22,6 +22,7 @@ struct FileReaderWriter {
         let documetnURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         var fileURL : URL
         fileURL = documetnURL.appendingPathComponent(fileName)
+        
         try? text.write(to: fileURL, atomically: true, encoding: .utf8)
     }
 }

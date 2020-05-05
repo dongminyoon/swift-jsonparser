@@ -9,6 +9,7 @@
 import Foundation
 
 struct ExecutorByArgument {
+    
     enum ArgumentState : Int { case oneArgument = 2, twoArgument }
     
     // CommandLine으로 넘어온 Argument의 상태를 확인
